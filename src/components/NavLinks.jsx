@@ -59,7 +59,7 @@ function NavLinks() {
 						<Link
 							to={"/barrowing"}
 							className="hover:text-green-800 duration-300">
-							Barrowing and Returning of Books
+							Borrowing and Returning of Books
 						</Link>
 					</Dropdown.Item>
 					<Dropdown.Item>
