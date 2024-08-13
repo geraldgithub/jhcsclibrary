@@ -3,6 +3,7 @@ import Libraries from "../components/pagesComponents/homepage/Libraries";
 import OpacSearch from "../components/pagesComponents/homepage/OpacSearch";
 import Video from "../components/pagesComponents/homepage/Video";
 import Visitors from "../components/pagesComponents/homepage/Visitors";
+import AnnualReport from "./annualReport/report";
 
 function Homepage() {
 	return (
