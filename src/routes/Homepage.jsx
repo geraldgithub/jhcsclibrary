@@ -8,6 +8,7 @@ function Homepage() {
 	return (
 		<>
 			<OpacSearch />
+			<AnnualReport/>
 			<Video />
 			<Visitors />
 			<Libraries />
