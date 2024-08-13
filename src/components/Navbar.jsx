@@ -23,7 +23,7 @@ function Navbar() {
 		<>
 			<nav
 				className={`z-50 fixed w-full p-2 ${scrollPosition > 80 ? "bg-black/80 backdrop-blur-md" : "bg-transparent"} ${
-					showNav ? "h-fit" : "transition h-24 delay-500"
+					showNav ? "h-fit" : "transition h-24 delay-100"
 				} duration-100`}>
 				<div className="mx-auto px-2 sm:px-6 lg:px-16">
 					<div className="relative flex h-16 items-center justify-between mt-2">
