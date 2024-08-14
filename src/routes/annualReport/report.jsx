@@ -1,7 +1,11 @@
-import logo from "../../assets/img/logo.png";
+import coverpage_2021 from "../../assets/img/2021-cover-page.png";
+import coverpage_2022 from "../../assets/img/2022-cover-page.png";
+import coverpage_2023 from "../../assets/img/2023-cover-page.png";
+
 import _2021 from "../../assets/pdf/2021.pdf"
 import _2022 from "../../assets/pdf/2022.pdf"
 import _2023 from "../../assets/pdf/2023.pdf"
+
 
 import {useEffect } from "react";
 
@@ -61,7 +65,7 @@ function AnnualReport() {
 						className="flex items-center p-4 bg-white rounded w-full max-w-[320px] lg:max-w-[290px] 2xl:max-w-[320px] mb-4">
 						<div className="flex flex-shrink-0 items-center justify-center bg-green-200 h-16 w-16 rounded">
 							<img
-								src={logo}
+								src={coverpage_2021}
 								className="w-12 h-12"
 								alt="JH LOGO"
 								draggable="false"
@@ -89,7 +93,7 @@ function AnnualReport() {
 						className="flex items-center p-4 bg-white rounded w-full max-w-[320px] lg:max-w-[290px] 2xl:max-w-[320px] mb-4">
 						<div className="flex flex-shrink-0 items-center justify-center bg-green-200 h-16 w-16 rounded">
 							<img
-								src={logo}
+								src={coverpage_2022}
 								className="w-12 h-12"
 								alt="JH LOGO"
 								draggable="false"
@@ -117,7 +121,7 @@ function AnnualReport() {
 						className="flex items-center p-4 bg-white rounded w-full max-w-[320px] lg:max-w-[290px] 2xl:max-w-[320px] mb-4">
 						<div className="flex flex-shrink-0 items-center justify-center bg-green-200 h-16 w-16 rounded">
 							<img
-								src={logo}
+								src={coverpage_2023}
 								className="w-12 h-12"
 								alt="JH LOGO"
 								draggable="false"
