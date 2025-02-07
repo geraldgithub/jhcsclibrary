@@ -20,7 +20,7 @@ function Banner() {
 				<div className="flex flex-col justify-center items-center">
 					<div className="mb-24 mt-40 md:mt-56 text-center">
 						<p className="text-white text-3xl md:text-6xl font-bold">JHCSC Library</p>
-						<p className="text-yellow-300 text-xs md:text-lg mt-4">
+						<p className="text-yellow-300 text-xs md:text-lg mt-4" style="font-family:mistral;">
 							"Stronger and Bolder JHCSC for Quality Tertiary Education"
 						</p>
 					</div>
