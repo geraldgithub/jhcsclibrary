@@ -1,12 +1,788 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="src/assets//img/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JHCSC Library</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>JHCSC Library</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/lib_logo.png" rel="icon">
+  <link href="assets/img/lib_logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">library@jhcsc.edu.ph</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+63 9076 7717 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.facebook.com/profile.php?id=100064622084746" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="mailto:library@jhcsc.edu.ph" class="email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/jh-logo.png" alt="">
+          <img src="assets/img/lib_logo.png" alt="">
+          <!-- <h1 class="sitename">JHCSC Library</h1> -->
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="#vismis">Vision Mission</a></li>
+                <li><a href="#service-hours">Service Hours</a></li>
+                <li><a href="#history">Brief History</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resources">Resources/Collections</a></li>
+            <li><a href="#l-spaces">Learning Spaces</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1><span>JHCSC Library</span></h1>
+            <p>Explore new worlds, ignite your imagination, and fuel your curiosity. A library offers endless possibilities, knowledge, and adventure. Discover, learn, grow—one book at a time. Your next journey begins here.</p>
+            <div class="d-flex">
+              <input type="text" class="form-control" placeholder="Opac Search" id="search">
+              <a href="#" class="btn-get-started" id="search-btn">Search</a>
+              <a href="https://www.youtube.com/watch?v=ZyqWfwQmk1U" class="glightbox btn-watch-video d-flex align-items-center" title="Watch Video"><i class="bi bi-play-circle"></i><span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a href="./assets/pdf/2021.pdf" target="_blank" class="stretched-link">2021 Report</a></h4>
+              <p>Annual Report</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-2 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bar-chart-fill icon"></i></div>
+              <h4><a href="./assets/pdf/2022.pdf" target="_blank" class="stretched-link">2022 Report</a></h4>
+              <p>Annual Report</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-2 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-pie-chart-fill icon"></i></div>
+              <h4><a href="./assets/pdf/2023.pdf" target="_blank" class="stretched-link">2023 Report</a></h4>
+              <p>Annual Report</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-2 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bar-chart-line-fill icon"></i></div>
+              <h4><a href="./assets/pdf/2024.pdf" class="stretched-link" target="_blank">2024 Report</a></h4>
+              <p>Annual Report</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="vismis" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p><span class="description-title">Vision Mission</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+              <ul>
+                <li>
+                  <i class="bi bi-compass"></i>
+                  <div>
+                    <h4>Vision</h4>
+                    <p>Leading public higher education institution serving the ASEAN community with quality, innovative and culture-sensitive programs.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-globe"></i>
+                  <div>
+                    <h4>Mission</h4>
+                    <p>Provides relevant and responsive programs in Agriculture, Education and other courses deemed necessary for the fulfillment of its vision.
+                      Undertakes applied research, extension and production services that yield workable and durable solutions to sector specific challenges, thus improving the socio-economic well-being of identified communities.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+     <!-- About Section -->
+     <section id="service-hours" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p><span class="description-title">Service Hours</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+              <ul>
+                <li>
+                  <i class="bi bi-clock-fill"></i>
+                  <div>
+                    <h4>Library Hours Policy</h4>
+                    <p>The library is open 54 hours per week. Currently, operating hours are <b>Monday-Friday</b>, from <b>7:00 AM to 6:00 PM</b>, no noon-break. The library is closed on Saturdays, Sundays, Holidays as well as all holidays' days observed by the Province of Zamboanga del Sur.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/svg.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+        <!-- About Section -->
+    <section id="history" class="about section light-background">
+
+        <div class="container section-title" data-aos="fade-up">
+            <h2>About</h2>
+            <p><span class="description-title">History of JHCSC</span></p>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+            <div class="row gy-3">
+              <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-content ps-0 ps-lg-3">
+                  <ul>
+                      <div>
+                        <h4>History</h4>
+                        <p>Sometime in 1983, the members of San Miguel Municipal Council and the community folks of Mati, San Miguel, Zamboanga del Sur together with the Department of Education, Culture and Sports (DECS) officials strongly supported the move of Assemblyman Vicente Madarang Cerilles for the creation of a barangay high school in Mati. The school was named Josefina H. Cerilles Memorial Barangay High School in honor of the assemblyman’s beloved wife who was once a supervisor of DECS. This was approved through a Sangguniang Bayan Resolution No. 23 in April 1983 and Sangguniang Panlalawigan Resolution No. 295-A in 1984 pursuant to DECS Order N0.6, series of 1983. Mr. Crispin Mag-usara took the leadership of the newly created school and not long after, Mr. Fortunato Gumintad succeeded him as teacher-in-charge. With the cooperation of the school’s faculty and staff, and the residents of the community, Mr. Gumintad made a lot of improvements of the school which was originally constructed out of light materials. In 1987, when all barangay high schools in the country were fully nationalized, the school’s name was changed to Josefina H. Cerilles National High School. In the succeeding year, it was one of the lucky recipients of the Secondary Education Development Program (SEDP) building package and subsequently thereafter, the U.S. AID academic building package. On February 25, 1995, Josefina H. Cerilles National High School was converted into Josefina H. Cerilles Polytechnic College by virtue of the Republic Act 7895 authored by Congressman Antonio H. Cerilles. With this development, the High School Department became the laboratory school of the Teacher Education Department of the College. In 1996, Josefina H. Cerilles Polytechnic College started its full operation as a CHED-supervised institution with Mr. Francisco Caylan of the DECS as its officer-in- charge. The first eight faculty members of the college were Mrs. Filomena G. Montealto, Mrs. Winifreda L. Rico, Mrs. Daylinda P. Sulong, Mrs. Mila A. Samin, MissNelia b. Aragon, Engr. Jerry B. Superales, Mr. Lumabao B. Sanlao and Mr. Jesus B. Purisima. In 1997, Mrs. Filomena G. Montealto was appointed as Vocational School Superintendent and since then, she took the lead in all the educational ventures of the College while at the same time upholding its vision, mission and goals by providing quality and relevant education to all its students. After six years of operation as a CHED-supervised institution, JHCPC was converted into Josefina H. Cerilles State College in August 11, 2011 by virtue of the Republic Act 9159 authored by Congresswoman Aurora E. Cerilles. Dr. Filomena G. Montealto was appointed as the first president of the state college. On February 21, 2005, Dr. Montealto tendered her voluntary resignation as president of the College due to health reasons. The JHCSC-Board of Trustees designated Mr. Dante B. Bayocot, the school registrar, as the officer-in-charge of the College. In order to make education accessible to the poorest of the poor in the province of Zamboanga del Sur, JHCSC campuses were opened in the municipalities of Tigbao, Lapuyan, Dimataling, Mahayag, Tambulig, and Ramon Magsaysay in June of 2005. Three former Western Mindanao State University-External Studies Units’ (WMSU-ESU) were affiliated to JHCSC during this year. It was also the year which marked the opening of JHCSC-Pagadian Campus. In June 2006, two new campuses were opened in the municipalities of Josefina and San Pablo. A former WMSU-ESU in the municipality of Margosatubig was affiliated to JHCSC in June of this year. CMSECAT (Canuto MS Enerio College of Arts and Trade) in the municipality of Lakewood was integrated to the college in October of the same year. On December 1, 2006, Dr. Carlicita A. Saniel, was appointed by the JHCSC-BOT as President of the college to serve the remaining term of Dr. Filomena Montealto while Mr. Dante B. Bayocot assumed his former position as college registrar. In March 2007, Dr. Carlicita A. Saniel was installed by JHCSC-BOT as the second President of the college. During her term of office, new campuses were opened to cater the educational needs of the poor but deserving students of Zamboanga del Sur. These campuses are located in the municipalities of Vincenzo Sagun (opened in June 2007), Tabina (October 2007), Guipos (June 2009) and Sominot (June 2009). The integration of ZSAC (Zamboanga del Sur Agricultural College) to JHCSC in June 2009 led to the birth of JHCSC-Dumingag Campus. This was followed by the opening of a satellite campus of JHCSC-Main in Dumalinao and the satellite campus of JHCSC-Dumingag in Molave and Aurora. On June 15, 2012, JHCSC-BOT confirmed Dr. Carlicita A. Saniel as President of JHCSC for the second term. Today, The College has 21 campuses located in the different municipalities of Zamboanga del Sur. Its main campus is preparing for its Level 3 accreditation with AACCUP.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+      </div>
+    </section><!-- /About Section -->
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section section-title">
+      <h2>Visitor</h2>
+      <p class="mb-5"><span>Visitor </span><span class="description-title">Counter</span></p>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-calendar"></i>
+            <div class="stats-item">
+              <span id="today"  data-purecounter-format="00" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Today</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-calendar"></i>
+            <div class="stats-item">
+              <span id="month"  data-purecounter-format="00" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <p>This Month</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-calendar"></i>
+            <div class="stats-item">
+              <span id="year"  data-purecounter-format="00" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <p>This Year</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-activity"></i>
+            <div class="stats-item">
+              <span id="total"  data-purecounter-format="00" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Total</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p><span>Our</span> <span class="description-title">Services</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Borrowing & Returning</h3>
+              </a>
+              <b>Borrowing of Books</b>
+              <ol>
+                <li>Students must present their Library ID to the section in-charge before they ask for the books they wanted to borrow.</li>
+                <li>Books can only be borrowed for a limited time, unless not needed by other users.</li>
+                <li>Students who want to photocopy the material are given 30 minutes only.</li>
+              </ol>
+
+              <b>Loss of Books</b>
+              <ol>
+                <li>Any library material lost must be replaced by the borrower.</li>
+                <li>Any lost book should be replaced by the same or later edition of the same title of the original book.</li>
+              </ol>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Library Policies</h3>
+              </a>
+              <b>Library Hours Policy</b>
+              <p>The library is open 54 hours per week. Currently, operating hours are Monday-Friday, from 7:00 AM to 6:00 PM, no noon-break. The library is closed on Saturdays, Sundays, Holidays as well as all holidays’ days observed by the Province of Zamboanga del Sur</p>
+              <br>
+              <b>Rules in the Use of Library</b>
+              <p>The College Library seeks to provide a safe, friendly, and welcoming environment for library patrons and staff. In order to effectively accomplish this mission, it becomes necessary to outline certain prohibited behaviors. A complete understanding of what is and what is not permissible within the library benefits of patrons, staff, and any visitors to the premises. Internet is generated outside the library, the library is not held responsible for the information accuracy, authenticity, and recency.</p>
+            
+            </div>
+          </div><!-- End Service Item -->
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Ask the Librarian</h3>
+              </a>
+              <p class="mb-3">Through chat, email, facebook and short messaging system (SMS), the Librarian gives precise and prompt responses to reference queries.</p>
+              <ul style="text-align: left;">
+                <li><b>library@jhcsc.edu.ph</b></li>
+                <li><b>+639076771755</b></li>
+              </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Referral</h3>
+              </a>
+              <p>Referral letter will be provided to student/s who wishes to do research to other libraries subject to the rules and regulations of the school the wish to visit.
+                All students who requested for referral letter must sign-in the record book.
+                Referral letter will be issued upon presentation of the Library ID.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Visiting User/s</h3>
+              </a>
+              <ol>
+                <li>All Library visitor/s must present any valid Identification Card to the library in charge.</li>
+                <li>The library visitor/s is required to log-in and out in the visitor's logbook.</li>
+                <li>Visitor/s is subject to the library's rules and regulations when using the library.</li>
+              </ol>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+     <!-- About Section -->
+     <section id="resources" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resources/Collections</h2>
+        <p><span>Our </span><span class="description-title">Databases</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/databases.jpg" alt="" class="img-fluid">
+          </div>
+
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+              <ul>
+                <li>
+                  <i class="bi bi-database"></i>
+                  <div>
+                    <h4>Gale Ref Complete</h4>
+                    <p>Gale offers a variety of resources for education, lifelong learning, and academic research. Whether you are looking for peer-reviewed articles; full-text magazines, newspapers, and eBooks; primary source documents; and videos or podcasts, Gale puts the right vetted content and tools at your fingertips!</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="bi bi-database"></i>
+                  <div>
+                    <h4>Phil E-Journal</h4>
+                    <p>The Philippine E-Journals is an expanding collection of academic journals that are made accessible globally through a single Web-based platform. It is hosted by C&E Publishing, Inc., a premier educational publisher in the Philippines and a leader in the distribution of integrated information-based solutions.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="bi bi-database"></i>
+                  <div>
+                    <h4>ProQuest</h4>
+                    <p>ProQuest powers research in academic, corporate, government, public and school libraries around the world with unique content.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+
+    <!-- About Section -->
+    <section id="l-spaces" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Learning Spaces</h2>
+        <p> <span>Guidelines & Policies </span><span class="description-title">Audio-Visual Room</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <div>
+                    <p>The use of the Audio Visual Room must be in a first come first serve basis. The user, i.e. students; teachers; department must schedule the utilization of the AVR five (5) days before the actual usage.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <div>
+                    <p>The user of the room shall be responsible for the immediate removal and "clean-up" of decoration, props, 
+                      etc. after the even or the program.
+                      The JHCSC AVR is a smoke free area. The user must at all times be responsible to ensure that all exits must remain unobstracted and accessible to all.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <div>
+                    <p>The individual or department who is responsible for the event or program take charge of the damage, misuse, 
+                      deterioration, vandalism, and the theft of any equipment or facilities and if anything happen or destroyed, 
+                      they shall be required to pay, repair, replace or shoulder the cost of same; refusal to do so and valid investigation 
+                      shall be subject to disciplinary action or prescribe in the College Code.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/visual-room.jpg" alt="" class="img-fluid">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+    
+
+    <!-- Team Section -->
+    <section id="team" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Librarians</h2>
+        <p><span>JHCSC </span><span class="description-title">Librarians</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/dayanan.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:jhcscmainlib2020@gmail.com"><i class="bi bi-envelope"></i></a>
+                  <a href="https://www.facebook.com/rdayanan" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="#libraries" title="+63 9076 7717 55"><i class="bi bi-phone"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rudylin C. Dayanan</h4>
+                <span>Head Librarian | Main Campus</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/erma.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:library.dumingag@jhcsc.edu.ph"><i class="bi bi-envelope"></i></a>
+                  <a href="https://www.facebook.com/esicag" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="#libraries" title="Not available"><i class="bi bi-phone"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Erma S. Ambalong</h4>
+                <span>College Librarian | Dumingag Campus</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/shen.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:jhcscpagadianlibrary@gmail.com"><i class="bi bi-envelope"></i></a>
+                  <a href="https://www.facebook.com/shien.sebial" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="#libraries" title="Not available"><i class="bi bi-phone"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Shienalie S. Lubon</h4>
+                <span>College Librarian | Pagadian Campus</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/rialyn.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:jhcsc.lakewoodlibrary@gmail.com"><i class="bi bi-envelope"></i></a>
+                  <a href="https://www.facebook.com/rialyn.e.calago" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="#libraries" title="Not available"><i class="bi bi-phone"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rialyn E. Calago</h4>
+                <span>College Librarian | Canuto Campus</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+
+          <!-- Staff -->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400" id="libraries">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/main.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Main Campus</h4>
+                <span>Mati, San Miguel, Zamboanga del Sur</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/dumingag.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Dumingag Campus</h4>
+                <span>Dumingag, Zamboanga del Sur</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/pagadian.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Pagadian Extension</h4>
+                <span>Pagadian City, Zamboanga del Sur</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/canuto.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Canuto MS Enerio</h4>
+                <span>Lakewood, Zamboanga del Sur</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p><span class="description-title">Contact Us</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Mati, San Miguel, Zamboanga del Sur</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+63 9076 7717 55</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>library@jhcsc.edu.ph</p>
+                </div>
+              </div><!-- End Info Item -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7907.5454988311485!2d123.28825100004102!3d7.707517737690672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3256a79baa90b2c5%3A0x49f45ea1beef5126!2sMati%2C%20San%20Miguel%2C%20Zamboanga%20del%20Sur!5e0!3m2!1sen!2sph!4v1740532983715!5m2!1sen!2sph" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="" id="send_mail" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit" id="btn-send">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">JHCSC Library</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
 </html>
